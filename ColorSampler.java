@@ -4,14 +4,20 @@ import java.awt.event.*;
 
 public class ColorSampler extends JFrame{
 
+    private Color[] colors;
+
     public static void main (String argv []){
         new ColorSampler("Color Sampler");
     }
 
     public ColorSampler (String title){
         super(title);
-        setBounds(100, 100, 250, 100);
+        setSize(350, 150);
         addWindowListener(new WindowDestroyer());
+
+        colors
+
+        getContentPane().setLayout(new BorderLayout);
 
         setVisible(true);
     }
@@ -21,4 +27,6 @@ public class ColorSampler extends JFrame{
             System.exit(0);
         }
     }
+
+    public 
 }

@@ -1,24 +1,24 @@
-public class Color{
+public class PresetColor{
     private String name;
     private int rValue;
     private int gValue;
     private int bValue;
 
-    public Color(){
-        name = "Default Color";
+    public PresetColor(){
+        name = "Default PresetColor";
         rValue = 0;
         gValue = 0;
         bValue = 0;
     }
 
-    public Color(String n, int r, int g, int b){
+    public PresetColor(String n, int r, int g, int b){
         name = n;
         rValue = r;
         gValue = g;
         bValue = b;
     }
 
-    public Color(Color rhs){
+    public PresetColor(PresetColor rhs){
         name = rhs.name;
         rValue = rhs.rValue;
         gValue = rhs.gValue;
@@ -49,10 +49,10 @@ public class Color{
     }
 
     public void setGValue(int g){
-        rValue = g;
+        gValue = g;
     }
 
     public void setBValue(int b){
-        rValue = b;
+        bValue = b;
     }
 }
